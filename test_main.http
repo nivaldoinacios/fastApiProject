@@ -1,0 +1,33 @@
+POST http://127.0.0.1:8000/api/v1/users
+Content-Type: application/json
+
+{
+  "first_name": "Riobamba",
+  "last_name": "jackdaw",
+  "middle_name": null,
+  "gender": "female",
+  "roles": [
+    "user"
+  ]
+}
+
+###
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/v1/users
+Accept: application/json
+
+###
+
+DELETE http://127.0.0.1:8000/api/v1/users/f997a2d4-6827-4042-be70-386c7b4529cb
+Accept: application/json
